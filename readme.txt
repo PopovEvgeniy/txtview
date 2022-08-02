@@ -2,7 +2,7 @@
 
                     Simple tool for printing a text files to console by Popov Evgeniy Alekseyevich
 
-                                           Version 0.7.0.1
+                                           Version 0.7.0.2
 
 
 Description and usage
@@ -19,8 +19,7 @@ This program distributed under GNU GENERAL PUBLIC LICENSE.
 
 Source code
 
-Dos version of this program compiled under Open Watcom.
-Windows version of this program compiled under MINGW-w64.
+This program compiled under Open Watcom.
 Source code can be compiled for wide range operation systems, but you need to create makefile or build script by yourself.
 I provide only three things: compiled binary files for Windows and Dos, makefile for Linux.
 
@@ -43,3 +42,4 @@ Version history
 0.1 - Initial version.
 0.2 - 0.7 - Small changes.
 0.7.0.1 - Makefile updated.
+0.7.0.2 - Windows version of Txt view recompiled under Open Watcom.
