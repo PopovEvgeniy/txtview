@@ -2,14 +2,14 @@
 
                     Simple tool for printing a text files to console by Popov Evgeniy Alekseyevich
 
-                                           Version 0.7.0.3
+                                           Version 0.7.0.4
 
 
 Description and usage
 
-This program is simple tool for printing a text files to console. It is simular to Unix "cat" utility.
-Txt view breaking up a large text file for enough amount of pages while it print to console.
-Each page is 25 lines. Use Enter key for go to next page.
+This program is a simple tool for printing a text files to console. It is simular to Unix "cat" utility.
+Txt view breaking up a large text file to a few pages while it print to console.
+Each page is 25 lines. Use Enter key to go to next page.
 
 This program takes a target file name as command line argument.
 
@@ -20,7 +20,7 @@ This program distributed under GNU GENERAL PUBLIC LICENSE.
 Source code
 
 This program compiled under Open Watcom.
-Source code can be compiled for wide range operation systems, but you need to create makefile or build script by yourself.
+Source code can be compiled for wide range operating systems, but you need to create makefile or build script by yourself.
 I provide only three things: compiled binary files for Windows and Dos, makefile for Linux.
 
 Install and uninstall under Linux
@@ -44,3 +44,4 @@ Version history
 0.7.0.1 - Makefile updated.
 0.7.0.2 - Windows version of Txt view recompiled under Open Watcom.
 0.7.0.3 - Makefile updated.
+0.7.0.4 - Documentation updated.
