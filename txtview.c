@@ -10,7 +10,6 @@ void do_pause();
 void break_up(const char current);
 void print_text(FILE *target);
 void print_file(const char *name);
-void work(const char *name);
 
 int main(int argc,char *argv[])
 {
@@ -21,7 +20,9 @@ int main(int argc,char *argv[])
  }
  else
  {
-  work(argv[1]);
+  print_file(argv[1]);
+  show_message("End of the file. Press Enter to exit");
+  do_pause();
  }
  return EXIT_SUCCESS;
 }
@@ -29,7 +30,7 @@ int main(int argc,char *argv[])
 void show_info()
 {
  putchar('\n');
- puts("Txt view. Version 0.7");
+ puts("Txt view. Version 0.7.1");
  puts("Simple tool for printing a text files to console by Popov Evgeniy Alekseyevich");
  puts("This program distributed under GNU GENERAL PUBLIC LICENSE");
  putchar('\n');
@@ -68,7 +69,7 @@ void break_up(const char current)
  }
  if (line>=LINES_PER_PAGE)
  {
-  show_message("Press Enter to go on next page");
+  show_message("Press Enter to go to next page");
   do_pause();
   line=0;
  }
@@ -94,11 +95,4 @@ void print_file(const char *name)
  target=open_read(name);
  print_text(target);
  fclose(target);
-}
-
-void work(const char *name)
-{
- print_file(name);
- show_message("End of the file. Press Enter to exit");
- do_pause();
 }

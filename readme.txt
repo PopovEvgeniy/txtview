@@ -2,7 +2,7 @@
 
                     Simple tool for printing a text files to console by Popov Evgeniy Alekseyevich
 
-                                           Version 0.7.0.5
+                                           Version 0.7.1
 
 
 Description and usage
@@ -45,3 +45,4 @@ Version history
 0.7.0.2 - Windows version of Txt view recompiled under Open Watcom.
 0.7.0.3 - Makefile updated.
 0.7.0.4 - 0.7.0.5 - Documentation updated.
+0.7.1 - Small changes.
