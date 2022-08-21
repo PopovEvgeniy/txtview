@@ -16,7 +16,7 @@ int main(int argc,char *argv[])
  show_info();
  if (argc!=2)
  {
-  show_message("You must get a target file name as command line argument");
+  puts("You must get a target file name as command line argument");
  }
  else
  {
@@ -30,8 +30,8 @@ int main(int argc,char *argv[])
 void show_info()
 {
  putchar('\n');
- puts("Txt view. Version 0.7.1");
- puts("Simple tool for printing a text files to console by Popov Evgeniy Alekseyevich");
+ puts("Txt view. Version 0.7.2");
+ puts("The simple tool for printing a text files to console by Popov Evgeniy Alekseyevich");
  puts("This program distributed under GNU GENERAL PUBLIC LICENSE");
  putchar('\n');
 }
@@ -49,7 +49,7 @@ FILE *open_read(const char *name)
  target=fopen(name,"rt");
  if (target==NULL)
  {
-  show_message("Can't open the target file");
+  puts("Can't open the target file");
   exit(EXIT_FAILURE);
  }
  return target;
@@ -57,7 +57,11 @@ FILE *open_read(const char *name)
 
 void do_pause()
 {
- while (getchar()!='\n') ;
+ while (getchar()!='\n')
+ {
+  ;
+ }
+
 }
 
 void break_up(const char current)
