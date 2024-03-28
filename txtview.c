@@ -7,7 +7,7 @@ void show_info();
 void show_message(const char *message);
 FILE *open_read(const char *name);
 void do_pause();
-void break_up(const char current);
+void break_up(const int current);
 void print_text(FILE *target);
 void print_file(const char *name);
 
@@ -16,7 +16,7 @@ int main(int argc,char *argv[])
  show_info();
  if (argc!=2)
  {
-  show_message("You must give a target file name as command line argument");
+  puts("You must give a target file name as command line argument");
  }
  else
  {
@@ -30,9 +30,10 @@ int main(int argc,char *argv[])
 void show_info()
 {
  putchar('\n');
- puts("Txt view. Version 0.7.4");
- puts("The simple tool for printing a text files to console by Popov Evgeniy Alekseyevich,2019-2023 years");
+ puts("Txt view. Version 0.7.9");
+ puts("The simple tool for printing a text files to console by Popov Evgeniy Alekseyevich,2019-2024 years");
  puts("This program distributed under GNU GENERAL PUBLIC LICENSE");
+ putchar('\n');
 }
 
 void show_message(const char *message)
@@ -47,7 +48,7 @@ FILE *open_read(const char *name)
  target=fopen(name,"rt");
  if (target==NULL)
  {
-  show_message("Can't open the target file");
+  puts("Can't open the target file");
   exit(EXIT_FAILURE);
  }
  return target;
@@ -62,7 +63,7 @@ void do_pause()
 
 }
 
-void break_up(const char current)
+void break_up(const int current)
 {
  static unsigned char line=0;
  if (current=='\n')
@@ -73,7 +74,6 @@ void break_up(const char current)
  {
   show_message("Press Enter to go to next page");
   do_pause();
-  putchar('\n');
   line=0;
  }
 
@@ -81,7 +81,7 @@ void break_up(const char current)
 
 void print_text(FILE *target)
 {
- char current;
+ int current;
  current='\n';
  while (!feof(target))
  {
@@ -89,7 +89,7 @@ void print_text(FILE *target)
   putchar(current);
   break_up(current);
  }
-
+ putchar('\n');
 }
 
 void print_file(const char *name)

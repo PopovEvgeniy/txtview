@@ -2,7 +2,7 @@
 
                     The simple tool for printing a text files to console by Popov Evgeniy Alekseyevich
 
-                                           Version 0.7.4
+                                           Version 0.7.9
 
 
 Description and usage
@@ -27,8 +27,8 @@ Install and uninstall under Linux
 
 Follow these steps:
 
-1.Extract content of source code archive.
-2.Open terminal and go to source code directory.
+1. Extract content of source code archive.
+2. Open terminal and go to source code directory.
 3.
 Run as root for install: make install
 Run as root for uninstall: make uninstall
@@ -45,4 +45,4 @@ Version history
 0.7.0.2 - Windows version of Txt view recompiled under Open Watcom.
 0.7.0.3 - Makefile updated.
 0.7.0.4 - 0.7.0.5 - Documentation updated.
-0.7.1 - 0.7.4 - Small changes.
+0.7.1 - 0.7.9 - Small changes.
