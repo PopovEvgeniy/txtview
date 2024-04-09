@@ -1,7 +1,6 @@
 #define LINES_PER_PAGE 25
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "txtview.h"
 
 void show_info();
 void show_message(const char *message);
@@ -30,7 +29,7 @@ int main(int argc,char *argv[])
 void show_info()
 {
  putchar('\n');
- puts("Txt view. Version 0.7.9");
+ puts("Txt view. Version 0.8");
  puts("The simple tool for printing a text files to console by Popov Evgeniy Alekseyevich,2019-2024 years");
  puts("This program distributed under GNU GENERAL PUBLIC LICENSE");
  putchar('\n');
