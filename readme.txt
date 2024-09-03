@@ -1,25 +1,25 @@
                                              Txt view
 
-                    The simple tool for printing a text files to console by Popov Evgeniy Alekseyevich
+                    The simple tool for printing a text file to a console by Popov Evgeniy Alekseyevich
 
-                                           Version 0.8.0.1
+                                           Version 0.8.0.2
 
 
 Description and usage
 
-This program is a simple tool for printing a text files to console. It is similar to Unix “cat” utility.
-Txt view breaking up a large text file to a few pages while it printing to console.
-Each page is 25 lines. Use Enter key to go to next page.
+This program is a simple tool for printing text files to a console. It is similar to Unix “cat” utility.
+Txt view breaks up a large text file to a few pages while it prints to console.
+Each page is 25 lines. Use the Enter key to go to the next page.
 
 This program takes a target file name as a command-line argument.
 
 License
 
-This program distributed under GNU GENERAL PUBLIC LICENSE.
+This program is distributed under GNU GENERAL PUBLIC LICENSE.
 
 Source code
 
-The code compiled under Open Watcom.
+The code was compiled under Open Watcom.
 You can compile it with any modern C compiler.
 The source code can compile for a wide range of operating systems, but you need to create a makefile or build a script by yourself.
 I provide the binary files (Dos and Windows) and the makefile for Linux.
@@ -29,7 +29,7 @@ Install and uninstall under Linux
 Follow these steps:
 
 1. Extract the content of the source code archive.
-2. Open a terminal and go to source code directory.
+2. Open a terminal and go to the source code directory.
 3.
 Run as root to install: make install
 Run as root to uninstall: make uninstall
@@ -48,4 +48,4 @@ Version history
 0.7.0.4 — 0.7.0.5 — Documentation updated.
 0.7.1 — 0.7.9 — Small changes.
 0.8 — Visual C++ support improved.
-0.8.0.1 — Documentation updated.
+0.8.0.1 — 0.8.0.2 — Documentation updated.
