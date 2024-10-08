@@ -15,7 +15,7 @@ int main(int argc,char *argv[])
  show_info();
  if (argc!=2)
  {
-  puts("You must give a target file name as command line argument");
+  puts("You must give a target file name as the command-line argument");
  }
  else
  {
@@ -29,9 +29,9 @@ int main(int argc,char *argv[])
 void show_info()
 {
  putchar('\n');
- puts("Txt view. Version 0.8");
- puts("The simple tool for printing a text files to console by Popov Evgeniy Alekseyevich,2019-2024 years");
- puts("This program distributed under GNU GENERAL PUBLIC LICENSE");
+ puts("Txt view. Version 0.8.1");
+ puts("The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich,2019-2024 years");
+ puts("This program is distributed under GNU GENERAL PUBLIC LICENSE");
  putchar('\n');
 }
 
@@ -71,7 +71,7 @@ void break_up(const int current)
  }
  if (line>=LINES_PER_PAGE)
  {
-  show_message("Press Enter to go to next page");
+  show_message("Press Enter to go to the next page");
   do_pause();
   line=0;
  }
