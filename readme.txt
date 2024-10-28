@@ -2,12 +2,12 @@
 
                     The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich
 
-                                           Version 0.8.1.1
+                                           Version 0.8.1.2
 
 
 Description and usage
 
-This program is a simple tool for printing text files to a console. It is similar to the Unix ‚Äúcat‚Äù utility.
+This program is a simple tool for printing text files to a console. It is similar to the Unix ìcatî utility.
 Txt view breaks up a large text file to a few pages while it prints to console.
 Each page is 25 lines. Use the Enter key to go to the next page.
 
@@ -42,12 +42,12 @@ Version history
 
 0.1: Initial version.
 0.2-0.7: The small changes.
-0.7.0.1: The makefile updated.
+0.7.0.1: The makefile has been updated.
 0.7.0.2: The Windows version of Txt view was recompiled under Open Watcom.
-0.7.0.3: The makefile updated.
-0.7.0.4-0.7.0.5: Documentation updated.
+0.7.0.3: The makefile has been updated.
+0.7.0.4-0.7.0.5: The documentation has been updated.
 0.7.1-0.7.9: The small changes.
-0.8: Visual C++ support improved.
-0.8.0.1-0.8.0.2: Documentation updated.
+0.8: Visual C++ support has improved.
+0.8.0.1-0.8.0.2: The documentation has been updated.
 0.8.1: The small changes.
-0.8.1.1: Documentation updated.
+0.8.1.1-0.8.1.2: The documentation has been updated.
