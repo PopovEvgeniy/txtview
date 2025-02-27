@@ -1,6 +1,6 @@
 ﻿install:
 	@echo Installation in progress. Please wait
-	@gcc txtview.c -g0 -O0 -o /bin/txtview
+	@$(CC) txtview.c -g0 -O0 -o /bin/txtview
 	@chmod ugo+rx /bin/txtview
 	@echo Installation successfully complete
 uninstall:

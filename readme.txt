@@ -2,7 +2,7 @@
 
                     The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich
 
-                                           Version 0.8.2
+                                           Version 0.8.2.1
 
 
 Description and usage
@@ -52,3 +52,4 @@ Version history
 0.8.1: The small changes.
 0.8.1.1-0.8.1.2: The documentation has been updated.
 0.8.2: The source code was recompiled under Tiny C Compiler.
+0.8.2.1: The makefile has been updated.
