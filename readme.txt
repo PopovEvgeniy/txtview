@@ -2,13 +2,13 @@
 
                     The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich
 
-                                           Version 0.8.2.1
+                                           Version 0.8.2.2
 
 
 Description and usage
 
 This program is a simple tool for printing text files to a console. It is similar to the Unix “cat” utility.
-Txt view breaks up a large text file to a few pages while it prints to console.
+Txt view breaks up a large text file into a few pages while it prints to the console.
 Each page is 25 lines. Use the Enter key to go to the next page.
 
 This program takes a target file name as the command-line argument.
@@ -53,3 +53,4 @@ Version history
 0.8.1.1-0.8.1.2: The documentation has been updated.
 0.8.2: The source code was recompiled under Tiny C Compiler.
 0.8.2.1: The makefile has been updated.
+0.8.2.2: The documentation has been updated.
