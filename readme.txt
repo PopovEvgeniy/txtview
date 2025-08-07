@@ -2,7 +2,7 @@
 
                     The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich
 
-                                           Version 0.8.2.2
+                                           Version 0.8.2.3
 
 
 Description and usage
@@ -15,7 +15,7 @@ This program takes a target file name as the command-line argument.
 
 License
 
-This program is distributed under GNU GENERAL PUBLIC LICENSE.
+This program is distributed under the GNU GENERAL PUBLIC LICENSE.
 
 Source code
 
@@ -34,10 +34,6 @@ Follow these steps:
 Run as root to install: make install
 Run as root to uninstall: make uninstall
 
-Contact
-
-You can send me a letter at tuzik87@inbox.ru.
-
 Version history
 
 0.1: Initial version.
@@ -53,4 +49,4 @@ Version history
 0.8.1.1-0.8.1.2: The documentation has been updated.
 0.8.2: The source code was recompiled under Tiny C Compiler.
 0.8.2.1: The makefile has been updated.
-0.8.2.2: The documentation has been updated.
+0.8.2.2-0.8.2.3: The documentation has been updated.
