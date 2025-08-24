@@ -2,7 +2,7 @@
 
                     The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich
 
-                                           Version 0.8.2.3
+                                           Version 0.8.3
 
 
 Description and usage
@@ -19,7 +19,7 @@ This program is distributed under the GNU GENERAL PUBLIC LICENSE.
 
 Source code
 
-The code was compiled under Tiny C Compiler.
+The code was compiled under Open Watcom.
 You can compile it with any modern C compiler.
 The source code can compile for a wide range of operating systems, but you need to create a makefile or a build script by yourself.
 I provide the binary file for Windows and the makefile for Linux.
@@ -50,3 +50,4 @@ Version history
 0.8.2: The source code was recompiled under Tiny C Compiler.
 0.8.2.1: The makefile has been updated.
 0.8.2.2-0.8.2.3: The documentation has been updated.
+0.8.3: The small changes.

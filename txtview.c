@@ -29,9 +29,9 @@ int main(int argc,char *argv[])
 void show_info()
 {
  putchar('\n');
- puts("Txt view. Version 0.8.2");
- puts("The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich,2019-2024 years");
- puts("This program is distributed under GNU GENERAL PUBLIC LICENSE");
+ puts("Txt view. Version 0.8.3");
+ puts("The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich,2019-2025 years");
+ puts("This program is distributed under the GNU GENERAL PUBLIC LICENSE");
  putchar('\n');
 }
 
