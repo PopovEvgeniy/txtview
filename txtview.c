@@ -11,7 +11,7 @@ void print_file(const char *name);
 int main(int argc,char *argv[])
 {
  show_info();
- if (argc!=2)
+ if (argc<2)
  {
   puts("You must give a target file name as the command-line argument");
  }
@@ -27,8 +27,8 @@ int main(int argc,char *argv[])
 void show_info()
 {
  putchar('\n');
- puts("Txt view. Version 0.8.4");
- puts("The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich,2019-2025 years");
+ puts("Txt view. Version 0.8.5");
+ puts("The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich,2019-2026 years");
  puts("This program is distributed under the GNU GENERAL PUBLIC LICENSE");
  putchar('\n');
 }
