@@ -27,7 +27,7 @@ int main(int argc,char *argv[])
 void show_info()
 {
  putchar('\n');
- puts("Txt view. Version 0.8.7");
+ puts("Txt view. Version 0.8.9");
  puts("The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich,2019-2026 years");
  puts("This program is distributed under the GNU GENERAL PUBLIC LICENSE");
  putchar('\n');
@@ -58,9 +58,14 @@ FILE *open_read(const char *name)
 
 void do_pause()
 {
- while (getchar()!='\n')
+ int current=0;
+ for (current=getchar();current!=EOF;current=getchar())
  {
-  ;
+  if (current=='\n')
+  {
+   break;
+  }
+
  }
 
 }
@@ -84,10 +89,9 @@ void break_up(const int current)
 
 void print_text(FILE *target)
 {
- int current='\n';
- while (!feof(target))
+ int current=0;
+ for (current=fgetc(target);current!=EOF;current=fgetc(target))
  {
-  current=fgetc(target);
   putchar(current);
   break_up(current);
  }
