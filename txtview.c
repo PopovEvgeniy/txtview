@@ -28,7 +28,7 @@ int main(int argc,char *argv[])
 void show_info()
 {
  putchar('\n');
- puts("Txt view. Version 0.9");
+ puts("Txt view. Version 0.9.1");
  puts("The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich,2019-2026 years");
  puts("This program is distributed under the GNU GENERAL PUBLIC LICENSE");
  putchar('\n');
@@ -43,14 +43,10 @@ void show_message(const char *message)
 FILE *open_read(const char *name)
 {
  FILE *target=NULL;
- if (name==NULL)
+ if (name!=NULL)
  {
-  fputc('\n',stderr);
-  fputs("Can't open the target file",stderr);
-  fputc('\n',stderr);
-  exit(EXIT_FAILURE);
+  target=fopen(name,"rt");
  }
- target=fopen(name,"rt");
  if (target==NULL)
  {
   fputc('\n',stderr);
