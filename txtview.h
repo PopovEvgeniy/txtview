@@ -4,3 +4,5 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+
+#define LINES_PER_PAGE 25

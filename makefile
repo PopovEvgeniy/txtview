@@ -4,5 +4,5 @@ install:
 	@chmod ugo+rx /bin/txtview
 	@echo Installation was successfully completed
 uninstall:
-	@rm -f /bin/txtview
+	@rm /bin/txtview
 	@echo Uninstallation was successfully completed
