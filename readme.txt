@@ -2,7 +2,7 @@
 
                     The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich
 
-                                           Version 0.9.3
+                                           Version 0.9.4
 
 
 The description.
@@ -54,4 +54,4 @@ Version history.
 0.8.3.1: The documentation has been updated.
 0.8.4-0.8.7: The small changes.
 0.8.8-0.8.9: The small bug has been fixed.
-0.9-0.9.3: The small changes.
+0.9-0.9.4: The small changes.
