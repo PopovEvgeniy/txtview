@@ -11,26 +11,32 @@ void print_file(const char *name);
 int main(int argc,char *argv[])
 {
  show_info();
- if (argc<2)
+ switch (argc)
  {
+  case 1:
   puts("You must give a target file name as the command-line argument");
   exit(EXIT_FAILURE);
- }
- else
- {
+  break;
+  case 2:
   print_file(argv[1]);
   show_message("The end of the file. Press Enter to exit");
   do_pause();
+  break;
+  default:
+  puts("You gave too many command-line arguments");
+  exit(EXIT_FAILURE);
+  break;
  }
+
  return EXIT_SUCCESS;
 }
 
 void show_info()
 {
  putchar('\n');
- puts("Txt view 0.9.4");
+ puts("Txt view 0.9.5");
  puts("The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich,2019-2026 years");
- puts("This program is distributed under the GNU GENERAL PUBLIC LICENSE");
+ puts("This program is distributed under the GNU GENERAL PUBLIC LICENSE (version 2 or later) terms");
  putchar('\n');
 }
 
