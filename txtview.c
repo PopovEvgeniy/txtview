@@ -7,6 +7,7 @@ void do_pause();
 void break_up(const int current);
 void print_text(FILE *target);
 void print_file(const char *name);
+void work(const char *name);
 
 int main(int argc,char *argv[])
 {
@@ -14,30 +15,26 @@ int main(int argc,char *argv[])
  switch (argc)
  {
   case 1:
-  puts("You must give a target file name as the command-line argument");
+  show_message("You must give a target file name as the command-line argument");
   exit(EXIT_FAILURE);
   break;
   case 2:
-  print_file(argv[1]);
-  show_message("The end of the file. Press Enter to exit");
-  do_pause();
+  work(argv[1]);
   break;
   default:
-  puts("You gave too many command-line arguments");
+  show_message("You gave too many command-line arguments");
   exit(EXIT_FAILURE);
   break;
  }
-
  return EXIT_SUCCESS;
 }
 
 void show_info()
 {
  putchar('\n');
- puts("Txt view 0.9.5");
+ puts("Txt view 0.9.6");
  puts("The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich,2019-2026 years");
  puts("This program is distributed under the GNU GENERAL PUBLIC LICENSE (version 2 or later) terms");
- putchar('\n');
 }
 
 void show_message(const char *message)
@@ -110,4 +107,11 @@ void print_file(const char *name)
  target=open_read(name);
  print_text(target);
  fclose(target);
+}
+
+void work(const char *name)
+{
+ print_file(name);
+ show_message("The end of the file. Press Enter to exit");
+ do_pause();
 }
