@@ -2,7 +2,7 @@
 
                     The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich
 
-                                           Version 0.9.6
+                                           Version 0.9.6.1
 
 
 The description.
@@ -43,7 +43,7 @@ Version history.
 0.7.0.3: The makefile has been updated.
 0.7.0.4-0.7.0.5: The documentation has been updated.
 0.7.1-0.7.9: The small changes.
-0.8: Visual C++ support has improved.
+0.8: Visual C++ support has been improved.
 0.8.0.1-0.8.0.2: The documentation has been updated.
 0.8.1: The small changes.
 0.8.1.1-0.8.1.2: The documentation has been updated.
@@ -55,3 +55,4 @@ Version history.
 0.8.4-0.8.7: The small changes.
 0.8.8-0.8.9: The small bug has been fixed.
 0.9-0.9.6: The small changes.
+0.9.6.1: The documentation has been updated.
