@@ -1,7 +1,8 @@
 #include "txtview.h"
 
-void show_info();
+void show_intro();
 void show_message(const char *message);
+void show_error(const char *message);
 FILE *open_read(const char *name);
 void do_pause();
 void break_up(const int current);
@@ -11,7 +12,7 @@ void work(const char *name);
 
 int main(int argc,char *argv[])
 {
- show_info();
+ show_intro();
  switch (argc)
  {
   case 1:
@@ -22,25 +23,33 @@ int main(int argc,char *argv[])
   work(argv[1]);
   break;
   default:
-  show_message("You gave too many command-line arguments");
+  show_error("You gave too many command-line arguments");
   exit(EXIT_FAILURE);
   break;
  }
  return EXIT_SUCCESS;
 }
 
-void show_info()
+void show_intro()
 {
  putchar('\n');
- puts("Txt view 0.9.6");
+ puts("Txt view 0.9.8");
  puts("The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich,2019-2026 years");
  puts("This program is distributed under the GNU GENERAL PUBLIC LICENSE (version 2 or later) terms");
+ putchar('\n');
 }
 
 void show_message(const char *message)
 {
  putchar('\n');
  puts(message);
+}
+
+void show_error(const char *message)
+{
+ fputc('\n',stderr);
+ fputs(message,stderr);
+ fputc('\n',stderr);
 }
 
 FILE *open_read(const char *name)
@@ -52,9 +61,7 @@ FILE *open_read(const char *name)
  }
  if (target==NULL)
  {
-  fputc('\n',stderr);
-  fputs("Can't open the target file",stderr);
-  fputc('\n',stderr);
+  show_error("Can't open the target file");
   exit(EXIT_FAILURE);
  }
  return target;
