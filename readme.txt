@@ -2,7 +2,7 @@
 
                     The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich
 
-                                           Version 0.9.8
+                                           Version 1.0
 
 
 The description.
@@ -16,6 +16,13 @@ This program takes a target file name as the command-line argument.
 License.
 
 This program is distributed under the GNU GENERAL PUBLIC LICENSE (version 2 or later) terms.
+
+Exit codes.
+
+0: The operation was successfully completed.
+1: The target file name is empty.
+2: Can't open the target file.
+3: The command-line arguments are invalid.
 
 The source code.
 
@@ -57,3 +64,4 @@ Version history.
 0.9-0.9.6: The small changes.
 0.9.6.1: The documentation has been updated.
 0.9.7-0.9.8: The small changes.
+0.9.9-1.0: The error handling has been improved.

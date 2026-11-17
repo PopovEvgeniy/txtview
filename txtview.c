@@ -1,9 +1,10 @@
 #include "txtview.h"
+#include "exitcode.h"
 
 void show_intro();
 void show_message(const char *message);
 void show_error(const char *message);
-FILE *open_read(const char *name);
+FILE *open_target_file(const char *name);
 void do_pause();
 void break_up(const int current);
 void print_text(FILE *target);
@@ -17,23 +18,23 @@ int main(int argc,char *argv[])
  {
   case 1:
   show_message("You must give a target file name as the command-line argument");
-  exit(EXIT_FAILURE);
+  exit(COMMAND_LINE_ARGUMENTS_ERROR);
   break;
   case 2:
   work(argv[1]);
   break;
   default:
   show_error("You gave too many command-line arguments");
-  exit(EXIT_FAILURE);
+  exit(COMMAND_LINE_ARGUMENTS_ERROR);
   break;
  }
- return EXIT_SUCCESS;
+ return 0;
 }
 
 void show_intro()
 {
  putchar('\n');
- puts("Txt view 0.9.8");
+ puts("Txt view 1.0");
  puts("The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich,2019-2026 years");
  puts("This program is distributed under the GNU GENERAL PUBLIC LICENSE (version 2 or later) terms");
  putchar('\n');
@@ -52,17 +53,30 @@ void show_error(const char *message)
  fputc('\n',stderr);
 }
 
-FILE *open_read(const char *name)
+void check_name(const char *name,const char *message,const int code)
 {
- FILE *target=NULL;
+ size_t length=0;
  if (name!=NULL)
  {
-  target=fopen(name,"r");
+  length=strlen(name);
  }
+ if (length==0)
+ {
+  show_error(message);
+  exit(code);
+ }
+
+}
+
+FILE *open_target_file(const char *name)
+{
+ FILE *target=NULL;
+ check_name(name,"The target file name is empty",EMPTY_TARGET_NAME_ERROR);
+ target=fopen(name,"r");
  if (target==NULL)
  {
   show_error("Can't open the target file");
-  exit(EXIT_FAILURE);
+  exit(OPEN_FILE_ERROR);
  }
  return target;
 }
@@ -111,7 +125,7 @@ void print_text(FILE *target)
 void print_file(const char *name)
 {
  FILE *target=NULL;
- target=open_read(name);
+ target=open_target_file(name);
  print_text(target);
  fclose(target);
 }
