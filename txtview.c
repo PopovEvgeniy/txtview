@@ -34,7 +34,7 @@ int main(int argc,char *argv[])
 void show_intro()
 {
  putchar('\n');
- puts("Txt view 1.0");
+ puts("Txt view 1.0.1");
  puts("The simple tool for printing text files to the console by Popov Evgeniy Alekseyevich,2019-2026 years");
  puts("This program is distributed under the GNU GENERAL PUBLIC LICENSE (version 2 or later) terms");
  putchar('\n');
